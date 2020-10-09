@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using ExtractHelper;
 
 namespace ExtractPcGhg
@@ -7,6 +8,7 @@ namespace ExtractPcGhg
 	{
 		private static void Main(string[] args)
 		{
+
 			try
 			{
 				ExtractPcGhg extractPcGhg = new ExtractPcGhg();
@@ -26,7 +28,6 @@ namespace ExtractPcGhg
 				ColoredConsole.WriteLineError(ex3.Message);
 				ColoredConsole.WriteLineError(ex3.StackTrace);
 			}
-
 			Console.WriteLine("Press enter to close...");
 			Console.ReadLine();
 		}
