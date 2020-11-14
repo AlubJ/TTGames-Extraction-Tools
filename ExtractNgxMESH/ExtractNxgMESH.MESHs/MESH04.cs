@@ -262,6 +262,8 @@ namespace ExtractNxgMESH.MESHs
 		protected virtual VertexList ReadVertexList(int numberofvertices)
 		{
 			VertexList vertexList = new VertexList();
+			//Console.WriteLine("1: {0:x8}", iPos);
+			//Console.WriteLine("fileData: {0} at {1}", fileData[iPos], iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -271,6 +273,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("2: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -280,6 +283,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("3: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -289,6 +293,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("4: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -298,6 +303,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("5: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -307,6 +313,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("6: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -317,6 +324,7 @@ namespace ExtractNxgMESH.MESHs
 			}
 			iPos += 2;
 			iPos += 2;
+			//Console.WriteLine("7: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -327,6 +335,7 @@ namespace ExtractNxgMESH.MESHs
 			}
 			iPos += 2;
 			iPos += 2;
+			//Console.WriteLine("8: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -336,6 +345,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("9: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -345,6 +355,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("10: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -354,6 +365,7 @@ namespace ExtractNxgMESH.MESHs
 				ColoredConsole.WriteLine("{0:x8}             {1} {2}", iPos, vertexDefinition.VariableType.ToString(), vertexDefinition.Variable.ToString());
 			}
 			iPos += 2;
+			//Console.WriteLine("11: {0:x8}", iPos);
 			if (fileData[iPos] != 0)
 			{
 				VertexDefinition vertexDefinition = new VertexDefinition();
@@ -364,6 +376,7 @@ namespace ExtractNxgMESH.MESHs
 			}
 			iPos += 2;
 			iPos += 6;
+			//Console.WriteLine("12: {0:x8}", iPos);
 			ColoredConsole.WriteLine("{0:x8}           Number of Vertices: {1:x8}", iPos, numberofvertices);
 			for (int i = 0; i < numberofvertices; i++)
 			{
@@ -431,6 +444,7 @@ namespace ExtractNxgMESH.MESHs
 				vector5.X = BigEndianBitConverter.ToSingle(fileData, iPos);
 				vector5.Y = BigEndianBitConverter.ToSingle(fileData, iPos + 4);
 				vector5.Z = BigEndianBitConverter.ToSingle(fileData, iPos + 8);
+				Console.WriteLine("{0:x8}        X | Y | Z:         | {1} | {2} | {3}", iPos, vector5.X, vector5.Y, vector5.Z);
 				Vector3 result6 = vector5;
 				iPos += 12;
 				return result6;
@@ -451,6 +465,7 @@ namespace ExtractNxgMESH.MESHs
 				Vector2 vector3 = new Vector2();
 				vector3.X = BigEndianBitConverter.ToHalf(fileData, iPos);
 				vector3.Y = BigEndianBitConverter.ToHalf(fileData, iPos + 2);
+				//Console.WriteLine("{0:x8}        X | Y:         | {1} | {2}", iPos, vector3.X, vector3.Y);
 				Vector2 result4 = vector3;
 				iPos += 4;
 				return result4;
@@ -473,9 +488,12 @@ namespace ExtractNxgMESH.MESHs
 			{
 				Vector4 vector = new Vector4();
 				vector.X = LookUp[fileData[iPos]];
+				//Console.WriteLine(iPos);
+				//Console.WriteLine(fileData[iPos]);
 				vector.Y = LookUp[fileData[iPos + 1]];
 				vector.Z = LookUp[fileData[iPos + 2]];
 				vector.W = LookUp[fileData[iPos + 3]];
+				//Console.WriteLine("{0:x8}        X | Y | Z | W:         | {1} | {2} | {3} | {4}", iPos, vector.X, vector.Y, vector.Z, vector.W);
 				Vector4 result2 = vector;
 				iPos += 4;
 				return result2;
@@ -487,6 +505,7 @@ namespace ExtractNxgMESH.MESHs
 				color.G = fileData[iPos + 1];
 				color.B = fileData[iPos + 2];
 				color.A = fileData[iPos + 3];
+				//Console.WriteLine("{0:x8}        R | G | B | A:         | {1} | {2} | {3} | {4}", iPos, color.R, color.G, color.B, color.A);
 				Color4 result = color;
 				iPos += 4;
 				return result;

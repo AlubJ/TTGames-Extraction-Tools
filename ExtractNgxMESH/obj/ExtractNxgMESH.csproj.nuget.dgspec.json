@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alunj\\source\\repos\\LEGO TOOLS\\ExtractNgxMESH\\ExtractNxgMESH.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alunj\\source\\repos\\LEGO TOOLS\\ExtractNgxMESH\\ExtractNxgMESH.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alunj\\source\\repos\\LEGO TOOLS\\ExtractNgxMESH\\ExtractNxgMESH.csproj",
+        "projectName": "ExtractNxgMESH",
+        "projectPath": "C:\\Users\\alunj\\source\\repos\\LEGO TOOLS\\ExtractNgxMESH\\ExtractNxgMESH.csproj",
+        "packagesPath": "C:\\Users\\alunj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alunj\\source\\repos\\LEGO TOOLS\\ExtractNgxMESH\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alunj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alunj\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net20": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net20": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

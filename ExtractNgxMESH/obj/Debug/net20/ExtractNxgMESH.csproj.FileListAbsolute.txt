@@ -1,0 +1,10 @@
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\bin\Debug\net20\ExtractNxgMESH.exe.config
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\bin\Debug\net20\ExtractNxgMESH.exe
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\bin\Debug\net20\ExtractNxgMESH.pdb
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\bin\Debug\net20\ExtractHelper.dll
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\bin\Debug\net20\System.Core.dll
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\obj\Debug\net20\ExtractNxgMESH.csprojAssemblyReference.cache
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\obj\Debug\net20\ExtractNxgMESH.csproj.CoreCompileInputs.cache
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\obj\Debug\net20\ExtractNxgMESH.csproj.CopyComplete
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\obj\Debug\net20\ExtractNxgMESH.exe
+C:\Users\alunj\source\repos\LEGO TOOLS\ExtractNgxMESH\obj\Debug\net20\ExtractNxgMESH.pdb

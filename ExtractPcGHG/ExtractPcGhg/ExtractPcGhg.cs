@@ -134,6 +134,7 @@ namespace ExtractPcGhg
 				pos += 2;
 				for (int i = 0; i < num3; i++)
 				{
+					ColoredConsole.WriteLineDebug("current pos {0}", pos);
 					vertexLists.Add(ReadVertexList(ref pos));
 				}
 				short num4 = BitConverter.ToInt16(fileData, pos);
@@ -177,6 +178,9 @@ namespace ExtractPcGhg
 				vector.X = BitConverter.ToSingle(array, i * part.vertexSize);
 				vector.Y = BitConverter.ToSingle(array, i * part.vertexSize + 4);
 				vector.Z = BitConverter.ToSingle(array, i * part.vertexSize + 8);
+				ColoredConsole.WriteLineDebug("VX: {0}", i * part.vertexSize);
+				ColoredConsole.WriteLineDebug("VX: {0}", i * part.vertexSize + 4);
+				ColoredConsole.WriteLineDebug("VX: {0}", i * part.vertexSize + 8);
 				streamwriter.WriteLine($"v {vector.X:0.000000} {vector.Y:0.000000} {vector.Z:0.000000} ".Replace(',', '.'));
 			}
 			for (int i = part.offsetVertices; i < part.offsetVertices + part.numberOfVertices; i++)
